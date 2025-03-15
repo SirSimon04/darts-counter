@@ -1,0 +1,143 @@
+.setup-container {
+  background-color: #303446; /* base */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #c6d0f5; /* text */
+}
+
+.setup-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.player-list {
+  margin-bottom: 16px;
+}
+
+.player-input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: #414559; /* surface1 */
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+
+.player-input-row:hover {
+  background-color: #51576d; /* surface2 */
+}
+
+.player-avatar {
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.player-input {
+  flex-grow: 1;
+  margin: 0 12px;
+  border-radius: 6px;
+  background-color: #232634; /* surface0 */
+  border: 1px solid #51576d; /* surface2 */
+  color: #c6d0f5; /* text */
+}
+
+.player-input::placeholder {
+  color: #a5adce; /* subtext0 */
+}
+
+.remove-button {
+  flex-shrink: 0;
+  color: #e78284; /* red */
+}
+
+.add-player-button {
+  margin: 0 0 24px;
+  width: 100%;
+  border-style: dashed;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #414559; /* surface1 */
+  color: #c6d0f5; /* text */
+  border: 1px dashed #51576d; /* surface2 */
+}
+
+.game-options {
+  margin-bottom: 24px;
+}
+
+.option-card {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #414559; /* surface1 */
+}
+
+.option-card .ant-card-head {
+  background-color: #51576d; /* surface2 */
+  border-bottom: 1px solid #626880; /* surface3 */
+  color: #c6d0f5; /* text */
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ant-radio-button-wrapper {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px !important;
+  flex-grow: 1;
+  text-align: center;
+  background-color: #232634; /* surface0 */
+  color: #c6d0f5; /* text */
+  border: 1px solid #51576d; /* surface2 */
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background-color: #8caaee; /* blue */
+  border-color: #8caaee; /* blue */
+  color: #303446; /* base */
+}
+
+.start-button-container {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.start-button {
+  min-width: 200px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 24px;
+  background-color: #a6e3a1; /* green */
+  border-color: #a6e3a1; /* green */
+  color: #303446; /* base */
+}
+
+.start-button:hover {
+  background-color: #94e2d5; /* teal */
+  border-color: #94e2d5; /* teal */
+  color: #303446; /* base */
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+  .setup-container {
+    padding: 16px;
+    border-radius: 0;
+  }
+
+  .player-input-row {
+    padding: 8px;
+  }
+
+  .ant-radio-button-wrapper {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,78 @@
+.game-container {
+  background-color: #303446;
+  color: #c6d0f5;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-row {
+  flex-grow: 1;
+}
+
+.player-card {
+  background-color: #494d64;
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.player-name {
+  margin-bottom: 5px;
+}
+
+.player-score {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.player-stats {
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.input-area {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: sticky;
+  bottom: 0;
+  background-color: #303446;
+  padding: 10px 0;
+}
+
+.input-container {
+  display: flex;
+  width: 80%; /* Breite der Eingabeleiste anpassen */
+}
+
+.score-input {
+  flex-grow: 1;
+  margin-right: 10px; /* Abstand zwischen Eingabefeld und Button */
+}
+
+.throw-button,
+.undo-button {
+  margin-left: 5px; /* Abstand zwischen Buttons anpassen */
+}
+
+.winner-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.active-player {
+  border: 2px solid #a6adc8;
+}
+
+.player-legs {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #a6adc8; /* Farbe der Legs-Anzeige anpassen */
+}
