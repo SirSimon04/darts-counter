@@ -18,7 +18,7 @@ function RestartPopup({
   onBackToSetup,
   onClose,
 }) {
-  const { Title, Text } = Typography;
+  const { Title } = Typography;
 
   // Tabellenspalten für die Spielerstatistik
   const columns = [

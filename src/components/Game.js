@@ -148,12 +148,6 @@ function Game({ gameSettings, onRestart, onBackToSetup }) {
     setCurrentPlayerIndex((prevIndex) => (prevIndex + 1) % players.length);
   };
 
-  const previousPlayer = () => {
-    setCurrentPlayerIndex(
-      (prevIndex) => (prevIndex - 1 + players.length) % players.length,
-    );
-  };
-
   const handleUndo = () => {
     if (gameStateHistory.length > 0) {
       const previousGameState = gameStateHistory[gameStateHistory.length - 1];
